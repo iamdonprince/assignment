@@ -20,7 +20,7 @@ function Paggination({
         <li className="page-item" onClick={decrementPage}>
           <button className="page-link">&laquo;</button>
         </li>
-        {pages &&
+        {pages.length ? (
           pages.map((page, i) => {
             return (
               <li
@@ -33,7 +33,12 @@ function Paggination({
                 <button className="page-link">{page}</button>
               </li>
             );
-          })}
+          })
+        ) : (
+          <li className="page-item active">
+            <button className="page-link">1</button>
+          </li>
+        )}
 
         <li className="page-item" onClick={() => incrementPage(pages.length)}>
           <button className="page-link">&raquo;</button>

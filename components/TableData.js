@@ -5,7 +5,7 @@ function TableData({ value, web, id, userName }) {
   if (web) {
     return (
       <td>
-        <a href={web}>{web}</a>
+        <a href={web} target="_blank">{web}</a>
       </td>
     );
   } else if (userName) {

@@ -3,6 +3,13 @@ import TableData from "./TableData";
 import Link from "next/link";
 import styles from "./table.module.css";
 function Tables({ users }) {
+  if (users.length <= 0) {
+    return (
+      <div className="alert alert-dismissible my-3 alert-light">
+        Data Not Fount
+      </div>
+    );
+  }
   return (
     <table
       className={` ${styles.table} my-3 table-md table-striped table-hover`}

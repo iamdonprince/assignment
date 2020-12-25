@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import { getDataFromApi } from "../lib/data";
-import styles from "../styles/Home.module.css";
 
 export default function Home({ data }) {
   return (
