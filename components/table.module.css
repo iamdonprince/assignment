@@ -1,0 +1,9 @@
+.table {
+  width: 100%;
+}
+.th {
+  cursor: pointer;
+}
+.th::after {
+  content: "\25b4";
+}
