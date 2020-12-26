@@ -4,6 +4,23 @@
 .th {
   cursor: pointer;
 }
-.th::after {
-  content: "\25b4";
+.span {
+  float: right;
+  margin-right: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.up,
+.down {
+  color: #cacaca;
+  font-size: 0.9rem;
+}
+
+.up {
+  position: relative;
+  bottom: 2px;
+}
+.down {
+  position: relative;
+  top: 2px;
 }
