@@ -13,7 +13,7 @@ function Tables({ users, sortArrayFun }) {
   return (
     <div className="table-responsive">
       <table
-        className={` ${styles.table} my-3 table-md table-striped table-hover table-bordered table-sm`}
+        className={` ${styles.table} my-3   table-striped table-hover table-bordered  `}
       >
         <thead>
           <tr>
