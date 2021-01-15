@@ -5,12 +5,14 @@ import Tables from "./Table";
 import SearchBar from "./SearchBar";
 import { useEffect, useState } from "react";
 import Paggination from "./Paggination";
-import { filterArray, sortArray } from "../lib/utile";
+// import { filterArray, sortArray } from "../lib/utile";
+// using module sortandfilterdata to get sorted array or filtered array
+import { filterArray, sortArray } from "sortandfilterdata";
 
 function Layout({ children, data, home }) {
   const [users, setUsers] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [usersPerPage, setUsersPerPage] = useState(15);
+  const [usersPerPage, setUsersPerPage] = useState(20);
   const [inputSearch, setInputSearch] = useState("");
   const [submitSearch, setSubmitSearch] = useState("");
   const [filteredArray, setFilteredArray] = useState([]);
